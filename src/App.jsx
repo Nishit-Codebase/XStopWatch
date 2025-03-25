@@ -18,10 +18,10 @@ function App() {
   }, [isRunning]);
 
   const formatTime = (time) => {
-    // const minutes = Math.floor(time / 60000);
+    const minutes = Math.floor(time / 60000);
     const seconds = Math.floor((time % 60000) / 1000);
-    const milliseconds = (time % 1000) / 10;
-    return `${String(seconds).padStart(1, "0")}:${String(milliseconds).padStart(2, "0")}`;
+    // const milliseconds = (time % 1000) / 10;
+    return `${String(minutes).padStart(1, "0")}:${String(seconds).padStart(2, "0")}`;
   };
 
   return (
