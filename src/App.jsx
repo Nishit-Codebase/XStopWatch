@@ -30,7 +30,7 @@ function App() {
       <p>Time: {formatTime(Time)}</p>
       <div className="buttons">
         <button onClick={() => setIsRunning(!isRunning)}>
-          {isRunning ? "Pause" : "Start"}
+          {isRunning ? "Stop" : "Start"}
         </button>
         <button onClick={() => { setTime(0); setIsRunning(false); }}>Reset</button>
       </div>
